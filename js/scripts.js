@@ -5,13 +5,21 @@ function Selection(movie, age, time, genre) {
     this.movie = movie;
     this.age = age;
     this.time = time;
-    this.genre = genre;
 }
 
-var godfatherMovie = new Selection("The Godfather", "", "", "oldies");
-var lotrMovie = new Selection("Lord of the Rings", "", "", "oldies");
-var jackMovie = new Selection("Jack Reacher", "", "", "new");
-var jamesBondMovie = new Selection("James Bond", "", "", "new");
+function MovieInfo(movieName, genre) {
+  this.movieName = movieName;
+  this.genre = genre;
+}
+
+var godfatherMovie = new MovieInfo("The Godfather", "oldies");
+var lotrMovie = new MovieInfo("Lord of the Rings", "oldies");
+var jackMovie = new MovieInfo("Jack Reacher", "new");
+var jamesBondMovie = new MovieInfo("James Bond", "new");
+
+// function
+//   if (MovieInfo.movieName === "")
+
 
 Selection.prototype.price = function() { // make prototype
     var price = 0;
@@ -51,7 +59,8 @@ $(document).ready(function(){
 
   var finalPrice = newMovie.price();
 
-  $("#results").text(finalPrice);
+  $("#results").text("Your movie will cost $" +finalPrice);
+  $("#results").show();
 
 
 

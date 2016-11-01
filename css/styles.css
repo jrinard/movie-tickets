@@ -5,17 +5,10 @@
 #results {
   font-size: 1.4em;
   margin: 20px;
-}
-
-#show-contact {
-  display: none;
-}
-
-.contact {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.contact:hover {
-  text-decoration: underline;
+  background-color: #eee;
+  border: solid thin #999;
+  padding: 10px;
+  display:none;
+  box-shadow: 4px 3px 5px #777;
+  border-radius: 10px;
 }
