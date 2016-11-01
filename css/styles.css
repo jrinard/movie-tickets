@@ -1,0 +1,21 @@
+* {
+  font-family: helvetica, arial, sans-serif;;
+}
+
+#results {
+  font-size: 1.4em;
+  margin: 20px;
+}
+
+#show-contact {
+  display: none;
+}
+
+.contact {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
